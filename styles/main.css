@@ -1,11 +1,11 @@
 body {
-  font-size: 100%;
-  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
-}
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
 
 p {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: lighter;
+  font-size:1rem;
   color: #2d2d2d;
 }
 
@@ -23,7 +23,7 @@ nav a:hover {
 /**************** HERO *****************/
 
 header img {
-  max-height: 6rem;
+  max-height: 3rem;
 }
 
 h1 .logo-w {
