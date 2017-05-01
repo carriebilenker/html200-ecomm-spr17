@@ -1,0 +1,41 @@
+* {
+ box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-gap: .93rem;
+  grid-template-areas:
+  "header"
+  "main"
+  "navbar"
+  "sidebar"
+  "footer"
+}
+
+header {
+  grid-area: header;
+  background: slategray;
+  padding: 2rem;
+}
+
+nav {
+  grid-area: navbar;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+logo-w {
+  grid-area: navbar;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+}
+
+footer {
+  grid-area: footer;
+  background: slategray;
+  padding: 2rem;
+}
