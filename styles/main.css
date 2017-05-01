@@ -17,8 +17,8 @@ img {
 
 /***************** NAV *****************/
 
-nav a:hover {
-  text-decoration: underline;
+a {
+  text-decoration: none;
 }
 
 /**************** HERO *****************/

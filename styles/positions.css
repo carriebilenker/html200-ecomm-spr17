@@ -1,41 +1,57 @@
 * {
  box-sizing: border-box;
 }
+:root {
+font-size: 16px;
+}
 
 .grid {
   display: grid;
   grid-gap: .93rem;
   grid-template-areas:
   "header"
-  "main"
   "navbar"
-  "sidebar"
+  "aside"
+  "main"
   "footer"
 }
 
+/* HEADER */
 header {
   grid-area: header;
   background: slategray;
   padding: 2rem;
 }
 
+/* NAV */
 nav {
   grid-area: navbar;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  padding: .533rem;
 }
 
-logo-w {
+nav ul {
   grid-area: navbar;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  padding-bottom: 2rem;
+  align-items: stretch;
+
 }
 
-footer {
-  grid-area: footer;
-  background: slategray;
-  padding: 2rem;
+nav ul li {
+padding-right: .5rem;
+
+}
+
+/* ASIDE */
+aside {
+grid-area: aside;
+background: black;
+padding: .533rem;
+}
+
+@media (min-width: 69.375rem) {
+  .grid {
+    grid-template-columns: 12.5rem  1rem 18.75rem;
+    grid-template-areas:  "header navbar aside main footer";
+  }
 }
