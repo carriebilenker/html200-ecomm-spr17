@@ -5,6 +5,7 @@
 font-size: 16px;
 }
 
+/*
 .grid {
   display: grid;
   grid-gap: .93rem;
@@ -15,32 +16,31 @@ font-size: 16px;
   "main"
   "footer"
 }
+*/
 
 /* HEADER */
 header {
   grid-area: header;
-  background: slategray;
-  padding: 2rem;
 }
 
 /* NAV */
-nav {
-  grid-area: navbar;
-  padding: .533rem;
-}
-
 nav ul {
-  grid-area: navbar;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
-
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: slategray;
+  width: 100%;
+  padding: .5rem;
+  margin: 0;
 }
 
-nav ul li {
-padding-right: .5rem;
-
+nav a {
+  text-decoration: none;
+  color: white;
 }
+
+
 
 /* ASIDE */
 aside {
