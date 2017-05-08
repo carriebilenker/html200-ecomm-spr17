@@ -1,11 +1,19 @@
+*{
+box-sizing: border-box;
+}
+
+:root {
+font-size: 16px;
+}
+
 body {
   font-size: 2rem;
-  font-family: 'Raleway', sans-serif;
+  font-family:Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
 
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family:Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: lighter;
-  font-size:1rem;
+  font-size:1.5rem;
   color: #2d2d2d;
 }
 
@@ -16,33 +24,80 @@ img {
 }
 
 /***************** NAV *****************/
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  background-color: #070533;
+  width: 100%;
+  padding: 1rem;
+  margin: 0;
+}
 
-a {
+nav a {
   text-decoration: none;
+  color: #3D7FCF;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav li i{
+  color: white;
 }
 
 /**************** HERO *****************/
-
-header img {
-  max-height: 3rem;
+header {
+  margin-bottom: 1rem;
 }
 
-h1 logo-w {
-  font-size: 3.5rem;
+header img {
+  max-height: 15rem;
+  float: left;
+}
+
+header h1 {
+  margin-top: 7rem;
+  line-height: 3.5rem;
+  font-size: 5rem;
+  color: #4C7EC9
+}
+
+h1 .logo-w {
+  font-size: 9rem;
 }
 
 /**************** ASIDE ****************/
-
+aside {
+ padding: 3rem;
+ background-color: #3D7FCF;
+ font-size: 1rem;
+ color: white;
+}
 input[type="submit"] {
   padding: .25rem;
-  background-color: #3D7FCF;
-  border: .06rem solid #3D7FCF;
   border-radius: 5px;
-  font-size: .75rem;
+  font-size: .1rem;
   color: white;
 }
 
 /*********** PRODUCTS SECTION ***********/
+.container {
+  display:grid;
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: [row1-start] 25% [row1-end] 100px auto;
+}
+
+.item {
+  max-width: 22rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
 
 section {
   padding: 0 .75rem;

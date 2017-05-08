@@ -1,10 +1,14 @@
 * {
  box-sizing: border-box;
 }
-:root {
-font-size: 16px;
-}
 
+
+p {
+  font-family:Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size:1.5rem;
+  color: #2d2d2d;
+}
 
 /* NAV */
 nav ul {
@@ -57,30 +61,3 @@ h1 .logo-w {
 
 
 /********** ASIDE *********/
-aside {
- padding: .5rem;
- background-color: #3D7FCF;
- font-size: 1rem;
- color: white;
-
-  /*
-  display: flex;
-  flex-direction:row;
-  justify-content: space-between;
-  padding: 3rem;
- }
-
-/*
-display: inline-grid;
-background: #ffffff;
-padding: .533rem;
-}
-*/
-
-/*
-@media (min-width: 69.375rem) {
-  .grid {
-    grid-template-columns: 12.5rem  1rem 18.75rem;
-    grid-template-areas:  "header navbar aside main footer";
-  }
-}

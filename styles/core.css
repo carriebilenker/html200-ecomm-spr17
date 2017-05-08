@@ -1,0 +1,25 @@
+* {
+ box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  font-size:1rem;
+
+p {
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  color: #2d2d2d;
+}
+
+/* NAVBAR */
+
+.navbar li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: slategray;
+  width: 100%;
+  margin: auto 0;
+}
