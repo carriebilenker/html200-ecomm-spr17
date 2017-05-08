@@ -28,16 +28,22 @@ nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: slategray;
+  justify-content:flex-end;
+  background-color: #120a63;
   width: 100%;
-  padding: .5rem;
+  padding: 1rem;
   margin: 0;
 }
 
 nav a {
+  padding: .7rem;
   text-decoration: none;
-  color: white;
+  color: #3D7FCF;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 
