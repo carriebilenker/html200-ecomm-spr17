@@ -1,3 +1,11 @@
+// email form submit
+
+function emailCapture () {
+  event.preventDefault();
+  console.log("I am submitted");
+
+}
+
 var products = [
   {
     "name": "Reversible Plaid",
@@ -29,6 +37,7 @@ var products = [
     "description": "Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.",
     "imageTitle": "fringed-plaid.jpeg"
   },
+
   {
     "name": "Multi Color",
     "price": 22.99,
@@ -48,4 +57,3 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
-

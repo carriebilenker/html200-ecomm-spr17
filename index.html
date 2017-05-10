@@ -26,11 +26,10 @@
       </ul>
     </nav>
   <aside>
-      <form>
-        <label>Sign up for our mailing list:
-          <input type="email" name="email">
-        </label>
-        <input type="submit" value="Submit">
+      <form name ="customerInfo" onsubmit="emailCapture();">
+        <label>Sign up for our mailing list:</label>
+          <input type="text" name="customerEmail" value="email">
+          <input type="submit" value="Submit">
       </form>
     </aside>
 
@@ -45,7 +44,7 @@
   <main class="container">
     <div class="row">
             <h2>Scarves</h2>
-          </section>
+
       <div class="item">
         <div>
           <h3>Reversible Plaid</h3>
@@ -104,7 +103,6 @@
         </div>
 
       </div>
-    </section>
   </main>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
