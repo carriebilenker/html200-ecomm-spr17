@@ -1,10 +1,31 @@
 // email form submit
 
-function emailCapture () {
+function validateEmail(email) {
+  // Regex validate email from stackoverflow: 
+  // http://stackoverflow.com/questions/46155/validate-email-address-in-javascript
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
+function capture() {
+  // Captures emails for newsletter, using regex validate (pattern matching?)
+  // form is located top of index.html
   event.preventDefault();
-  console.log("I am submitted");
+  var emailCapture = document.customerInfo.name.value
+  console.log(validateEmail(emailCapture));
+
+  if (validateEmail(emailCapture)) {
+    alert("Thanks for signing up!");
+    console.log("Email " + emailCapture +  " captured");
+    return(emailCapture);
+  }
+  else {
+    alert("Please submit a valid email!");
+  }
 
 }
+
+// Product lists
 
 var products = [
   {
