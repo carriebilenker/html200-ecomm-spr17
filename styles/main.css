@@ -25,15 +25,21 @@ nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content: flex-start;
   background-color: #070533;
   width: 100%;
-  padding: 1rem;
+  padding: 0rem;
   margin: 0;
+  font-size: 2rem;
+}
+
+nav ul li {
+  padding: 1rem;
 }
 
 nav a {
   text-decoration: none;
+  color: #adddff;
 }
 nav a:hover {
   text-decoration: none;
@@ -44,28 +50,34 @@ nav a:hover {
 .hero {
   display: flex;
   justify-content: center;
-  color: #42b6f4;
+  color: #070533;
 }
 
 header {
-  background-color: #333; /* we can't add background-color to the .hero section above
-                           * because that section also uses the "snow" class which has
-                           * a background-image which overrides the background-color */
+  background-color: #adddff;
 }
 
 header img {
-  max-height: 6rem;
-  padding-right: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 10rem;
+  padding-right: 0;
+  padding-bottom: 2rem;
+}
+h1 {
+  font-size:3rem;
+}
+h1 .logo-w {
+  font-size: 6rem;
 }
 
-h1 .logo-w {
-  font-size: 4rem;
-}
+
 
 /**************** ASIDE ****************/
 
 aside {
-  margin: 1rem;
+  margin-left: 2rem;
+  color:#070533;
 }
 
 input[type="submit"] {
@@ -73,7 +85,6 @@ input[type="submit"] {
   background-color: #3d7fcf;
   border: 1px solid #3d7fcf;  /* warning for same color border - but we need to set the border so we can set the border-radius */
   border-radius: 5px;
-  font-size: 1rem;
   color: white;
 }
 
@@ -106,7 +117,7 @@ h3 {
 
 .item-container div {
   max-width: 40rem;
-  border: 1px solid black;
+  border: 1px white;
   margin: 1rem;
   padding: 1rem;
 }
