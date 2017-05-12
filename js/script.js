@@ -26,7 +26,12 @@ function capture() {
 }
 
 
-//Add Products to Shopping cart //
+//Add Products to Shopping cart
+
+var fa fa-shopping-cart =
+
+function (addCart);
+
 
 // Product lists
 

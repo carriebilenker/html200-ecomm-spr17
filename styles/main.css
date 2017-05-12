@@ -30,7 +30,6 @@ nav ul {
   width: 100%;
   padding: 0rem;
   margin: 0;
-  font-size: 2rem;
 }
 
 nav ul li {
@@ -85,16 +84,19 @@ h1 .logo-w {
 
 /**************** ASIDE ****************/
 
-aside {
-  margin-left: 2rem;
+.emailSubmit {
+  display: flex;5: row;
+  margin-left: 50rem;
+  float: right;
   color:#070533;
+  font-size: 1rem;
 }
 
 input[type="submit"] {
-  padding: .25rem;
-  background-color: #3d7fcf;
-  border: 1px solid #3d7fcf;  /* warning for same color border - but we need to set the border so we can set the border-radius */
-  border-radius: 5px;
+  padding: .2rem;
+  background-color: #aaaaaa;
+  border: 1px solid #aaaaaa;  /* warning for same color border - but we need to set the border so we can set the border-radius */
+  border-radius: 1x;
   color: white;
 }
 
