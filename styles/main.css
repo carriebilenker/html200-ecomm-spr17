@@ -22,9 +22,12 @@ img {
 
 /*****************MEDIA QUERIES*********/
 @media print {
-  nav, footer, video {
-    display: none;
+  nav, footer, video, p{
+    display: none
+    }
+  img
   }
+
 
   a:after {
     content: "("attr(href)")";
@@ -42,20 +45,26 @@ img {
   article {
     width: 90%;
   }
-}
 
 @media (max-width:410px) {
-  body {color:red;}
-}
 nav ul {
  display: flex;
- flex-direction: row;
- justify-content: space-between;
+ flex-direction: column;
+ justify-content: space-around;
  margin: 0;
  padding: 0;
+  }
+
+  header img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
 
 }@media (max-width: 600px) {
  nav ul { display: inline-block; }
+
 }@media (min-width: 601px) {
  nav ul { display: flex; }
 }
