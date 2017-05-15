@@ -19,6 +19,47 @@ img {
   max-width: 100%;
 }
 
+
+/*****************MEDIA QUERIES*********/
+@media print {
+  nav, footer, video {
+    display: none;
+  }
+
+  a:after {
+    content: "("attr(href)")";
+    font-size: 80%;
+  }
+
+  body {
+    padding: 0;
+}
+
+  .container {
+    width: 100%;
+}
+
+  article {
+    width: 90%;
+  }
+}
+
+@media (max-width:410px) {
+  body {color:red;}
+}
+nav ul {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin: 0;
+ padding: 0;
+
+}@media (max-width: 600px) {
+ nav ul { display: inline-block; }
+}@media (min-width: 601px) {
+ nav ul { display: flex; }
+}
+
 /***************** NAV *****************/
 
 nav ul {
@@ -155,21 +196,6 @@ h3 {
     border-color: buttonface;
     border-image: initial;
 
-/*
-:root {
-font-size: 16px;
-}
-
-body {
-  font-size: 2rem;
-  font-family:Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
-
-p {
-  font-family:Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: lighter;
-  font-size:1.5rem;
-  color: #2d2d2d;
-}
 
 
 /* TODO: size images manually so this is not necessary */
