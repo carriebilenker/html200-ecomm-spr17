@@ -27,11 +27,29 @@ function capture() {
 
 
 //Add Products to Shopping cart
+function addCart(el) {
+  event.preventDefault()
+  for (var i=0; i < products.length; i++) {
+      if (products[i].name == el.id){
+          console.log (products[i].name + " was added to your cart for "+ products[i].price);
+          Cart.push (products[i]);
+          console.log(Cart);
+    }
+  }
+}
 
-var fa fa-shopping-cart =
+function removeCart(el) {
+  event.preventDefault()
+  for (var i=0; i < Cart.length; i++) {
+      if (products[i].name == el.id){
+          console.log (products[i].name + " was removed from your cart");
+          Cart.splice (i,1);
+    }
+  }
+}
+// Items in Cart
 
-function (addCart);
-
+var Cart = []
 
 // Product lists
 
