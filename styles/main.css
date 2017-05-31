@@ -55,18 +55,30 @@ nav ul {
  padding: 0;
   }
 
+nav ul a {
+  color: red;
+}
+  nav ul li {
+    color: blue;
+  }
+
   header img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
+  h1 {
+    color:green;
+  }
 }
 
-}@media (max-width: 600px) {
- nav ul { display: inline-block; }
+}@media (max-width: 852px) {
+ nav ul { display: flex;
+  }
+nav ul a {
+  color: red;
+}
 
-}@media (min-width: 601px) {
- nav ul { display: flex; }
 }
 
 /***************** NAV *****************/
